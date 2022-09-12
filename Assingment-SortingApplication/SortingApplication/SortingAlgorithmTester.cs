@@ -6,14 +6,6 @@ namespace SortingApplication
     {
         private int swapped = 0;
 
-        private void Swap(int index1, int index2, int[] array)
-        {
-            int temp = array[index1];
-            array[index1] = array[index2];
-            array[index2] = temp;
-            swapped++;
-        }
-
         private void QuickSort(int[] array)
         {
             QuickSort(array, 0, array.Length - 1);
@@ -103,15 +95,15 @@ namespace SortingApplication
         {
             switch (algorithm)
             {
-                case SortingAlgorithm.BubbleSort:
+                case SortingAlgorithm.Bubble:
                     BubbleSort(array);
                     break;
 
-                case SortingAlgorithm.ShakerSort:
+                case SortingAlgorithm.Shaker:
                     ShakerSort(array);
                     break;
 
-                case SortingAlgorithm.QuickSort:
+                case SortingAlgorithm.Quick:
                     QuickSort(array);
                     break;
             }

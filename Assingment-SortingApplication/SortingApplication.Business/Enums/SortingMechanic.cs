@@ -8,8 +8,8 @@ namespace SortingApplication
 {
     public enum SortingAlgorithm
     {
-        BubbleSort,
-        ShakerSort,
-        QuickSort
+        Bubble,
+        Shaker,
+        Quick
     }
 }
