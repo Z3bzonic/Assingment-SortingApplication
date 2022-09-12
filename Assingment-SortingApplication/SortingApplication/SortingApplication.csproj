@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SortingApplication.Business\SortingApplication.Business.csproj" />
+    <ProjectReference Include="..\SortingApplication.Common\SortingApplication.Common.csproj" />
+    <ProjectReference Include="..\SortingApplication.DAL\SortingApplication.DAL.csproj" />
+    <ProjectReference Include="..\SortingApplication.Entities\SortingApplication.Entities.csproj" />
+    <ProjectReference Include="..\SortingApplication.Test\SortingApplication.Test.csproj" />
+  </ItemGroup>
+
 </Project>

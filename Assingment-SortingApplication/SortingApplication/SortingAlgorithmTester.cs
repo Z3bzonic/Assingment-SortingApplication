@@ -4,13 +4,6 @@ namespace SortingApplication
 {
     internal class SortingAlgorithmTester
     {
-        private enum SortingAlgorithm
-        {
-            BubbleSort,
-            ShakerSort,
-            QuickSort
-        }
-
         private int swapped = 0;
 
         private void Swap(int index1, int index2, int[] array)
