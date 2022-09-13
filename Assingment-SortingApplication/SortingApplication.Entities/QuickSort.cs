@@ -4,12 +4,12 @@ namespace SortingApplication.Entities
 {
     public class QuickSort : Swapper
     {
-        protected void SortQuick(int[] array)
+        public void SortQuick(int[] array)
         {
-            QuickSort(array, 0, array.Length - 1);
+            SortQuick(array, 0, array.Length - 1);
         }
 
-        private void QuickSort(int[] array, int Left, int Right)
+        public void SortQuick(int[] array, int Left, int Right)
         {
             int L = Left;
             int R = Right;
@@ -36,11 +36,11 @@ namespace SortingApplication.Entities
 
             if (Left < R)
             {
-                QuickSort(array, Left, R);
+                SortQuick(array, Left, R);
             }
             if (L < Right)
             {
-                QuickSort(array, L, Right);
+                SortQuick(array, L, Right);
             }
         }
     }

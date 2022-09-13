@@ -2,9 +2,9 @@
 
 namespace SortingApplication.Entities
 {
-    internal class ShakerSort : Swapper
+    public class ShakerSort : Swapper
     {
-        private void SortShaker(int[] array)
+        public void SortShaker(int[] array)
         {
             bool swapped = true;
             while (swapped)

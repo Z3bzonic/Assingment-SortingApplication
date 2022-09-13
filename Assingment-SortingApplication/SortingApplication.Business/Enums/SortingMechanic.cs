@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SortingApplication
 {
-    public enum SortingAlgorithm
+    public enum SortingMechanic
     {
         Bubble,
         Shaker,
-        Quick
+        Quick,
+        Zip
     }
 }
