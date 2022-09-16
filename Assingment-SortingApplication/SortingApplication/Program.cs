@@ -1,11 +1,13 @@
-﻿namespace SortingApplication
+﻿using SortingApplication.Common;
+
+namespace SortingApplication
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            SortingAlgorithmTester tester = new SortingAlgorithmTester();
-            tester.Test();
+            var presentation = new Presentation();
+            presentation.SelectDataAndSorting();
         }
     }
 }
